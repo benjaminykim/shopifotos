@@ -6,6 +6,12 @@ class AppControllerTest < ActionDispatch::IntegrationTest
     @base_title = "Shopifotos"
   end
 
+  test "should get root" do
+    get root_url
+    assert_response :success
+    assert_select "title", "#{@base_title} | Home"
+  end
+
   test "should get home" do
     get home_url
     assert_response :success
