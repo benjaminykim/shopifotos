@@ -1,24 +1,28 @@
-# README
+# Shopifotos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An image repository with basic CRUD operations for Shopify's image challenge.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+- Clone the repo and install the gems:
+```
+$ bundle install --without production
+```
+- Migrate the database:
+```
+$ rails db:migrate
+```
+- Run tests
+```
+$ rails t
+```
+- Deploy to local server
+```
+$ rails s
+```
 
-* System dependencies
 
-* Configuration
+## Production Deployment
 
-* Database creation
+Production is hosted on Heroku at [shopifotos](https://shopifotos.herokuapp.com)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
