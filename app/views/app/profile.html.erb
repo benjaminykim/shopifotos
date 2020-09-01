@@ -1,2 +1,10 @@
-<h1>App#profile</h1>
-<p>Find me in app/views/app/profile.html.erb</p>
+<% provide(:title, "Profile") %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shopifotos | <%= yield(:title) %></title>
+	</head>
+	<body>
+		<h1>Profile</h1>
+	</body>
+</html>
